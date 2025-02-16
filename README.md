@@ -14,6 +14,19 @@ curl --location 'http://localhost:8080/processData' \
 --header 'Content-Type: application/json' \
 --data '[55, 10, 401, 60, 901]'
 ```
+### Responses
+```bash
+// List with data 
+{
+    "statusCode": 200,
+    "message": "Filter and modified Numbers sent to gRPC service"
+}
+// Empty List
+{
+    "statusCode": 400,
+    "message": "Empty List provided in the payload"
+}
+```
 
 ### Make sure you see logs such as
 ```bash
