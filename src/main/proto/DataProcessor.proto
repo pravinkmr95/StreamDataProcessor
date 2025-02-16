@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.stream.data.processor";
+option java_outer_classname = "ProcessServiceProto";
+
+service ProcessService {
+    rpc sendProcessedData (stream ProcessDataRequest) returns (stream ProcessDataResponse);
+}
+
+message ProcessDataRequest {
+    int32 number = 1;
+}
+
+message ProcessDataResponse {
+    string message = 1;
+}
