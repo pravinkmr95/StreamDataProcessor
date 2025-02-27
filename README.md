@@ -6,7 +6,7 @@
 ```bash
   "mvn clean install" (Verify if Java files are generated under /target/generated-sources/protobuf)
   "mvn spring-boot:run" OR Run Application from the Editor
-  Note: If you face any import issue into server(ProcessServiceImpl), try moving the downloaded code under directory IdeaProjects(In case) 
+  Note: If you face any import issue into server(ProcessServiceImpl), try marking the directory /target/generated-sources as generated source.
 ```
 ### Use Below Payload:
 ```bash
